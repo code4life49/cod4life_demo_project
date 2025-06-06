@@ -1,0 +1,218 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:screenOrientation">landscape</item>
+    </style>
+
+    <style name="custom_progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="measure_fragment_show_data_textview_style">
+        <item name="android:textColor">@color/measure_show_data_textview_color</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="hip_operation_title_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">29px</item>
+        <item name="android:layout_marginTop">28px</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/hip_title_text</item>
+        <item name="android:textSize">30px</item>
+    </style>
+    <style name="surgery_location_selection_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/hip_title_text</item>
+        <item name="android:textSize">27px</item>
+    </style>
+    <style name="surgery_laction_rabtn_style">
+        <item name="android:layout_marginTop">48px</item>
+        <item name="android:layout_height">216px</item>
+        <item name="android:layout_width">154px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="surgery_laction_img_style">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="result_fragment_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">#D7FDFF</item>
+        <item name="android:textSize">32.5px</item>
+    </style>
+    <style name="six_sides_number_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">582px</item>
+        <item name="android:textColor">#999999</item>
+        <item name="android:textSize">26px</item>
+    </style>
+
+    <style name="hip_operation_wordstip_textview_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/hip_wordstip_text</item>
+        <item name="android:textSize">26px</item>
+    </style>
+    <style name="hip_operation_process_name_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18px</item>
+    </style>
+
+    <style name="about_info_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">20px</item>
+        <item name="android:textColor">#00BEFF</item>
+        <item name="android:layout_marginLeft">499px</item>
+    </style>
+    <style name="dialog_input_default_value_textView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="dialog_input_default_value_edittext">
+        <item name="android:layout_width">176px</item>
+        <item name="android:layout_height">40px</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_marginLeft">165px</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorHint">#afff</item>
+        <item name="android:paddingStart">5dp</item>
+    </style>
+    <style name="tv_main_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#00BEFF</item>
+    </style>
+    <style name="process_img_iv">
+        <item name="android:layout_width">65px</item>
+        <item name="android:layout_height">65px</item>
+        <item name="android:layout_marginLeft">1127px</item>
+        <item name="android:src">@drawable/process_notdo</item>
+    </style>
+
+
+    <style name="btn_general">
+        <item name="android:background">@drawable/selector_btn_press_authenticate</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">170px</item>
+        <item name="android:layout_height">58px</item>
+    </style>
+
+
+    <style name="btn_step_textview">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">16px</item>
+        <item name="android:textColor">#2BCBFF</item>
+        <item name="android:layout_marginTop">89px</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="btn_step">
+        <item name="android:layout_width">74px</item>
+        <item name="android:layout_height">75px</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@drawable/selector_btn_step</item>
+    </style>
+
+    <style name="textview_data_lable">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">14px</item>
+        <item name="android:textColor">#9FCEFF</item>
+        <item name="android:layout_marginLeft">49px</item>
+    </style>
+
+    <style name="textview_data_lable_measure">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">14px</item>
+        <item name="android:textColor">#9FCEFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textview_data_show">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">22px</item>
+        <item name="android:textColor">@color/hip_title_text</item>
+        <item name="android:layout_marginLeft">127px</item>
+    </style>
+
+    <style name="textview_data_show_measure">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textSize">22px</item>
+        <item name="android:textColor">@color/hip_title_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    android:textSize="16px"-->
+
+    <style name="textview_hip_data_titile">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textSize">16px</item>
+        <item name="android:layout_marginLeft">22px</item>
+    </style>
+
+    <style name="spinner_style"  parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textSize">30px</item>
+        <item name="android:height">31px</item>
+        <item name="android:textColor">#fff</item>
+
+    </style>
+
+    <style name="BlackDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/bg_black_dialog</item>
+        <item name="android:textColorPrimary">#FFFFFFFF</item>
+        <item name="colorAccent">#2196F3</item>
+        <item name="buttonBarPositiveButtonStyle">@style/BlackDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/BlackDialogButton</item>
+    </style>
+
+    <style name="BlackDialogButton" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">爱乔文件发送软件</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- hip-->
+    <string name="ble_connect_start">正在连接，请稍候</string>
+    <string name="ble_not_connect">设备未连接</string>
+    <string name="ble_disconnect">设备连接断开</string>
+    <string name="ble_connection_failed">设备连接异常</string>
+</resources>

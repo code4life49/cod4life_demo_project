@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="144px"
+        android:layout_marginTop="139px"
+        android:src="@drawable/app_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="146px"
+        android:layout_marginTop="306px"
+        android:includeFontPadding="false"
+        android:letterSpacing="0.1"
+        android:text="欢迎来到"
+        android:textColor="#fff"
+        android:textSize="36px" />
+
+    <View
+        android:layout_width="86px"
+        android:layout_height="2px"
+        android:layout_marginLeft="146px"
+        android:layout_marginTop="389px"
+        android:background="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="146px"
+        android:layout_marginTop="439px"
+        android:includeFontPadding="false"
+        android:text="爱乔文件发送管理系统"
+        android:textColor="#fff"
+        android:textSize="38px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="146px"
+        android:layout_marginTop="492px"
+        android:includeFontPadding="false"
+        android:text="File  Send  Management  System"
+        android:textColor="#fff"
+        android:textSize="24px" />
+</RelativeLayout>

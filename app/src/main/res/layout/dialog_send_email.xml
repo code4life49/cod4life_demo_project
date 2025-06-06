@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800px"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发送邮件"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <!-- 收件人邮箱 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请填写数据需要导出的邮箱地址"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/recipient_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="recipient@example.com"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="14sp" />
+
+            <!-- 最近邮箱网格显示 -->
+            <GridView
+                android:id="@+id/recent_email_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recipient_edit_text"
+                android:numColumns="3"
+                android:horizontalSpacing="4dp"
+                android:verticalSpacing="4dp"
+                android:stretchMode="columnWidth"
+                android:gravity="center"
+                android:maxHeight="120dp"
+                android:padding="8dp"
+                android:elevation="4dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!-- 选中的文件 -->
+        <TextView
+            android:id="@+id/selected_files_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已选择文件："
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="16dp"
+            android:background="#F5F5F5"
+            android:padding="8dp" />
+
+        <!-- 进度条 -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/transparent"
+                android:textColor="#666666" />
+
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送"
+                android:background="#2196F3"
+                android:textColor="#ffffff"
+                android:minWidth="100dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

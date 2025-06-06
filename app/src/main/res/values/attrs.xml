@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MediaInfoView">
+        <!-- 标题相关 -->
+        <attr name="titleText" format="string"/>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="titleTextColor" format="color"/>
+
+        <!-- 信息行1 -->
+        <attr name="info1Text" format="string"/>
+        <attr name="info1Value" format="string"/>
+        <attr name="info1TextColor" format="color"/>
+        <attr name="info1ValueColor" format="color"/>
+
+        <!-- 信息行2 -->
+        <attr name="info2Text" format="string"/>
+        <attr name="info2Value" format="string"/>
+        <attr name="info2TextColor" format="color"/>
+        <attr name="info2ValueColor" format="color"/>
+
+        <!-- 图标 -->
+        <attr name="zoomIconSrc" format="reference"/>
+        <attr name="collapseIconSrc" format="reference"/>
+
+        <!-- 新增点击事件属性 -->
+        <attr name="onToggleListener" format="string"/>
+
+    </declare-styleable>
+</resources>

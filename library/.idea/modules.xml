@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1836832213/app.iml" filepath="$PROJECT_DIR$/.idea/modules/1836832213/app.iml" group="ihpas/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1489803203/ihpas.iml" filepath="$PROJECT_DIR$/.idea/modules/1489803203/ihpas.iml" group="ihpas" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library.iml" filepath="$PROJECT_DIR$/.idea/modules/library.iml" group="ihpas/library" />
+    </modules>
+  </component>
+</project>

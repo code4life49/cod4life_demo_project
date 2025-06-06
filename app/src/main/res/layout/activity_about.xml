@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_bgn"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86px">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="12px"
+            android:layout_height="22px"
+            android:layout_marginLeft="46px"
+            android:layout_marginTop="14px"
+            android:background="@drawable/btn_back" />
+
+
+        <ImageView
+            android:layout_width="409px"
+            android:layout_height="59px"
+            android:src="@drawable/about_left"
+            android:layout_marginLeft="23px"
+            android:layout_marginTop="22px"/>
+        <ImageView
+            android:layout_width="409px"
+            android:layout_height="57px"
+            android:src="@drawable/about_right"
+            android:layout_marginLeft="848px"
+            android:layout_marginTop="20px"/>
+
+        <TextView
+            style="@style/tv_main_title"
+            android:text="髋关节手术定位系统"
+            android:layout_marginTop="16px"
+        android:textColor="#0090FF"/>/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="920px"
+        android:layout_height="558px"
+        android:layout_marginLeft="180px"
+        android:layout_marginTop="163px"
+
+        android:background="#5412244A"/>
+    <RelativeLayout
+        android:layout_marginTop="88px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:layout_width="157px"
+                android:layout_height="78px"
+                android:layout_marginLeft="560px"
+                android:layout_marginTop="171px"
+                android:src="@drawable/app_logo" />
+
+            <TextView
+                style="@style/about_info_textview"
+                android:layout_marginTop="318px"
+                android:text="软件名称：爱乔文件发送软件" />
+
+            <TextView
+                style="@style/about_info_textview"
+                android:layout_marginTop="362px"
+                android:text="发布版本：V1.0" />
+
+            <TextView
+                style="@style/about_info_textview"
+                android:layout_marginTop="406px"
+                android:text="完整版本：V1.0.3.1" />
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

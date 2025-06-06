@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="manufacturername">
+        <item> 双动头 </item>
+        <item> 试 模 </item>
+    </string-array>
+</resources>

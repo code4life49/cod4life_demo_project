@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF5F9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86px"
+        android:background="#3F69C4"
+        android:gravity="center|start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:text="爱乔文件发送软件"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginHorizontal="30px"
+        android:layout_marginTop="30px"
+        android:background="#FFFFFF"
+        android:gravity="center|start">
+
+        <ImageButton
+            android:id="@+id/btn_forward_down"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginLeft="20px"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60px"
+            android:text="文件管理 > 患者文件"
+            android:textColor="#252525"
+            android:gravity="center_vertical"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30px"
+        android:layout_marginTop="25px"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="250px"
+            android:layout_height="match_parent"
+            android:background="#F7F7F7"
+            android:paddingHorizontal="20px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="列表详情"
+                android:textColor="#252525"
+                android:gravity="center_vertical"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/input_search"
+                android:layout_width="200px"
+                android:layout_height="40px"
+                android:padding="8dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="搜索..."
+                android:drawableEnd="@drawable/ic_search"
+                android:drawablePadding="3dp"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textColor="#252525"
+                android:textColorHint="#AAAAAA"
+                android:textSize="12sp" />
+
+            <!-- 左侧文件夹树形结构 -->
+            <LinearLayout
+                android:layout_width="200px"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10px">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=">文件管理"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:padding="8dp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/folder_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!-- 右侧文件网格和操作区域 -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#ffffff"
+            android:padding="16dp">
+
+            <!-- 文件列表标题栏 -->
+            <LinearLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="16dp"
+                android:layout_alignParentTop="true">
+
+                <EditText
+                    android:id="@+id/search_edit_text"
+                    android:layout_width="400px"
+                    android:layout_height="50px"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="请输入..."
+                    android:drawableEnd="@drawable/ic_search"
+                    android:drawablePadding="3dp"
+                    android:imeOptions="actionSearch"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:textColor="#252525"
+                    android:textColorHint="#AAAAAA"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/current_folder_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="请选择文件夹"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333" />
+
+                <!-- 搜索框 -->
+<!--                <LinearLayout-->
+<!--                    android:layout_width="500px"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:background="@drawable/rounded_edittext"-->
+<!--                    android:padding="8dp"-->
+<!--                    android:gravity="center_vertical">-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/search_edit_text"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:hint="搜索文件名..."-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:textColor="#333333"-->
+<!--                        android:textColorHint="#999999"-->
+<!--                        android:background="@null"-->
+<!--                        android:inputType="text"-->
+<!--                        android:imeOptions="actionSearch" />-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/clear_search_button"-->
+<!--                        android:layout_width="20dp"-->
+<!--                        android:layout_height="20dp"-->
+<!--                        android:src="@drawable/ic_search"-->
+<!--                        android:layout_marginStart="8dp"-->
+<!--                        android:tint="#666666"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:clickable="true"-->
+<!--                        android:background="?android:attr/selectableItemBackgroundBorderless"-->
+<!--                        android:padding="2dp" />-->
+
+<!--                </LinearLayout>-->
+
+            </LinearLayout>
+
+            <!-- 文件网格 -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/file_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/title_layout"
+                android:layout_above="@+id/send_email_button"
+                android:layout_marginBottom="16dp" />
+
+            <!-- 发送邮件按钮 - 右下角 -->
+            <Button
+                android:id="@+id/send_email_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:text="发送邮件"
+                android:enabled="false"
+                android:background="@drawable/button_rounded_background"
+                android:textColor="#ffffff"
+                android:padding="12dp"
+                android:minWidth="120dp"
+                android:elevation="4dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
